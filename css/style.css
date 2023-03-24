@@ -6,7 +6,6 @@ html {
     box-sizing: inherit;
 }
 
-
 .body__container {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
@@ -16,7 +15,8 @@ html {
     padding: 5px;
     border: 1px solid #0000ff6e;
     border-radius: 10px;
-    background-image: url("images/background.jpg");
+    background-image: url(../images/background.jpg);
+    background-size: cover;
 }
 
 .header {
