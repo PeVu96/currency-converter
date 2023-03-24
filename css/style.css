@@ -9,11 +9,12 @@ html {
 .body__container {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
+    font-weight: bold;
     max-width: 600px;
     margin: 0 auto;
     margin-top: 10px;
     padding: 5px;
-    border: 1px solid #0000ff6e;
+    border: 3px solid #0000aa;
     border-radius: 10px;
     background-image: url(../images/background.jpg);
     background-size: cover;
@@ -52,8 +53,9 @@ html {
     margin: 0px 20px;
     padding: 10px;
     border-radius: 10px;
-    border: 3px solid #0000ff;
+    border: 3px solid #0000aa;
     background-color: #0000ff3d;
+    font-weight: bold;
 }
 
 .form__button:hover {
