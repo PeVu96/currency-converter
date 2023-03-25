@@ -1,4 +1,7 @@
 # #2 Currency converter
+## Link to my website:
+https://pevu96.github.io/currency-converter/
+## Description
 This is my second project - simple currency converter.
 
 In my currency converter you have four currencies to choose from. 
