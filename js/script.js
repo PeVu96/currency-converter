@@ -1,28 +1,44 @@
-let plnValueElement = document.querySelector(".js-plnValue");
-let formElement = document.querySelector(".js-form");
-let resultElement = document.querySelector(".js-result");
-let currencyElement = document.querySelector(".js-currency");
+{
+    const calculateResult = (currency) => {
+        const eur = 4.69;
+        const usd = 4.45;
+        const gbp = 5.26;
+        const chf = 4.72;
 
-formElement.addEventListener("submit", (event) => {
-    event.preventDefault();
+        switch (currency) {
+            case "eur":
+                return plnValue / eur;
+            case "usd":
+                return plnValue / usd;
+            case "gbp":
+                return plnValue / gbp;
+            case "chf":
+                return plnValue / chf;
+        }
+    };
 
-    let plnValue = plnValueElement.value;
-    let currency = currencyElement.value;
-    let eur = 4.69;
-    let usd = 4.45;
-    let gbp = 5.26;
-    let chf = 4.72;
+    const onFormSubmit = () => {
+        (event) => {
+            event.preventDefault();
 
-    switch (currency) {
-        case "eur": result = plnValue / eur
-            break;
-        case "usd": result = plnValue / usd
-            break;
-        case "gbp": result = plnValue / gbp
-            break;
-        case "chf": result = plnValue / chf
-            break;
-    }
+            const plnValueElement = document.querySelector(".js-plnValue");
+            const resultElement = document.querySelector(".js-result");
+            const currencyElement = document.querySelector(".js-currency");
 
-    resultElement.innerHTML = result.toFixed(2);
-})
+            const plnValue = plnValueElement.value;
+            const currency = currencyElement.value;
+
+            const result = calculateResult(plnValue, currency);
+
+            resultElement.innerHTML = result.toFixed(2);
+        };
+    };
+
+    const init = () => {
+        const formElement = document.querySelector(".js-form");
+
+        formElement.addEventListener("submit", onFormSubmit);
+    };
+
+    init();
+}
