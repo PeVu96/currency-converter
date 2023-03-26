@@ -18,34 +18,34 @@
   <link rel="icon" href="images/icon.jpg">
 </head>
 
-<body class="body__container">
-  <h1 class="header">Kantor internetowy</h1>
-  <p>
-  <form class="js-form">
-    <label>
-      <span class="form__labelText">Wybierz walutę:</span>
-      <select class="js-currency form__field" name="pickedCurrency" required>
-        <option disabled selected>Wybierz walutę</option>
-        <option value="eur">Euro</option>
-        <option value="usd">Dolar amerykański</option>
-        <option value="gbp">Funt brytyjski</option>
-        <option value="chf">Frank szwajcarski</option>
-      </select>
-    </label>
-    <label>
-      <p>
-        <span class="form__labelText">Wartość w wybranej walucie:</span> <input class="js-plnValue form__field" type="number"
-          name="value" placeholder="Wpisz wartość" required step="0.01">
-      </p>
-    </label>
-    </p>
+<body class="bodyContainer">
+  <div class="formContainer"><h1 class="header">Kantor internetowy</h1>
     <p>
-      <button class="form__button">Przelicz!</button>
-    </p>
-  </form>
-  <p class="lastParagraph">
-    Za podaną ilość wybranej waluty otrzymasz: <strong class="js-result">???</strong> zł
-  </p>
+    <form class="js-form">
+      <label>
+        <span class="form__labelText">Wybierz walutę:</span>
+        <select class="js-currency form__field" name="pickedCurrency" required>
+          <option disabled selected>Wybierz walutę</option>
+          <option value="eur">Euro</option>
+          <option value="usd">Dolar amerykański</option>
+          <option value="gbp">Funt brytyjski</option>
+          <option value="chf">Frank szwajcarski</option>
+        </select>
+      </label>
+      <label>
+        <p>
+          <span class="form__labelText">Wartość w wybranej walucie:</span> <input class="js-plnValue form__field" type="number"
+            name="value" placeholder="Wpisz wartość" required step="0.01">
+        </p>
+      </label>
+      </p>
+      <p>
+        <button class="form__button">Przelicz!</button>
+      </p>
+    </form>
+    <p class="lastParagraph">
+      Za podaną ilość wybranej waluty otrzymasz: <strong class="js-result">???</strong> zł
+    </p></div>
 </body>
 
 </html>

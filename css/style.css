@@ -6,24 +6,28 @@ html {
     box-sizing: inherit;
 }
 
-.body__container {
+.bodyContainer {
     font-family: 'Roboto', sans-serif;
     line-height: 1.5;
-    max-width: 600px;
-    margin: 0 auto;
-    margin-top: 10px;
-    padding: 5px;
-    border: 3px solid #0000aa;
-    border-radius: 10px;
     background-image: url(../images/background.jpg);
     background-size: cover;
     font-weight: bold;
 }
 
+.formContainer {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 5px;
+    border: 3px solid #0000aa;
+    border-radius: 10px;
+    background-color: #eeeeee;
+}
+
 .header {
     padding: 10px;
     margin: 20px;
-    background-color: #0000ff3d;
+    background-color: #0000ff79;
     border: 3px solid #0000aa;
     text-align: center;
     border-radius: 10px;
@@ -54,7 +58,7 @@ html {
     padding: 10px;
     border-radius: 10px;
     border: 3px solid #0000aa;
-    background-color: #0000ff3d;
+    background-color: #0000ff79;
     font-weight: bold;
 }
 

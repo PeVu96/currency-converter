@@ -1,19 +1,19 @@
 {
     const calculateResult = (plnValue, currency) => {
-        const eur = 4.69;
-        const usd = 4.45;
-        const gbp = 5.26;
-        const chf = 4.72;
+        const eur = 4.70;
+        const usd = 4.36;
+        const gbp = 5.33;
+        const chf = 4.74;
 
         switch (currency) {
             case "eur":
-                return plnValue / eur;
+                return plnValue * eur;
             case "usd":
-                return plnValue / usd;
+                return plnValue * usd;
             case "gbp":
-                return plnValue / gbp;
+                return plnValue * gbp;
             case "chf":
-                return plnValue / chf;
+                return plnValue * chf;
         }
     };
 
