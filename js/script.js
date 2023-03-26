@@ -1,5 +1,5 @@
 {
-    const calculateResult = (currency) => {
+    const calculateResult = (plnValue, currency) => {
         const eur = 4.69;
         const usd = 4.45;
         const gbp = 5.26;
@@ -17,21 +17,19 @@
         }
     };
 
-    const onFormSubmit = () => {
-        (event) => {
-            event.preventDefault();
+    const onFormSubmit = (event) => {
+        event.preventDefault();
 
-            const plnValueElement = document.querySelector(".js-plnValue");
-            const resultElement = document.querySelector(".js-result");
-            const currencyElement = document.querySelector(".js-currency");
+        const plnValueElement = document.querySelector(".js-plnValue");
+        const resultElement = document.querySelector(".js-result");
+        const currencyElement = document.querySelector(".js-currency");
 
-            const plnValue = plnValueElement.value;
-            const currency = currencyElement.value;
+        const plnValue = plnValueElement.value;
+        const currency = currencyElement.value;
 
-            const result = calculateResult(plnValue, currency);
+        const result = calculateResult(plnValue, currency);
 
-            resultElement.innerHTML = result.toFixed(2);
-        };
+        resultElement.innerHTML = result.toFixed(2);
     };
 
     const init = () => {
