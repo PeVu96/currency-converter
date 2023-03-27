@@ -60,6 +60,7 @@ html {
     border: 3px solid #0000aa;
     background-color: #0000ff79;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .form__button:hover {
