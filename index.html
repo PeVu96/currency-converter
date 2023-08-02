@@ -26,10 +26,10 @@
         <span class="form__labelText">Wybierz walutę:</span>
         <select class="js-currency form__field" name="pickedCurrency" required>
           <option disabled selected>Wybierz walutę</option>
-          <option value="eur">Euro</option>
-          <option value="usd">Dolar amerykański</option>
-          <option value="gbp">Funt brytyjski</option>
-          <option value="chf">Frank szwajcarski</option>
+          <option value="eur">Euro (€)</option>
+          <option value="usd">Dolar amerykański ($)</option>
+          <option value="gbp">Funt brytyjski (£)</option>
+          <option value="chf">Frank szwajcarski (₣)</option>
         </select>
       </label>
       <label>
@@ -37,11 +37,8 @@
           <span class="form__labelText">Wartość w wybranej walucie:</span> <input class="js-plnValue form__field"
             type="number" name="value" placeholder="Wpisz wartość" required step="0.01">
         </p>
-      </label>
-      </p>
-      <p>
         <button class="form__button">Przelicz!</button>
-      </p>
+      </label>
     </form>
     <p class="lastParagraph">
       Za podaną ilość wybranej waluty otrzymasz: <strong class="js-result">___</strong> zł</p>
