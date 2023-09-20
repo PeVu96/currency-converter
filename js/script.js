@@ -1,5 +1,5 @@
 {
-    const calculateResult = (plnValue, currency) => {
+    const calculateResult = (amount, currency) => {
         const eur = 4.45;
         const usd = 4.05;
         const gbp = 5.17;
@@ -7,27 +7,27 @@
 
         switch (currency) {
             case "eur":
-                return plnValue * eur;
+                return amount * eur;
             case "usd":
-                return plnValue * usd;
+                return amount * usd;
             case "gbp":
-                return plnValue * gbp;
+                return amount * gbp;
             case "chf":
-                return plnValue * chf;
+                return amount * chf;
         }
     };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
 
-        const plnValueElement = document.querySelector(".js-plnValue");
+        const amountElement = document.querySelector(".js-value");
         const resultElement = document.querySelector(".js-result");
         const currencyElement = document.querySelector(".js-currency");
 
-        const plnValue = plnValueElement.value;
+        const amount = amountElement.value;
         const currency = currencyElement.value;
 
-        const result = calculateResult(plnValue, currency);
+        const result = calculateResult(amount, currency);
 
         resultElement.innerHTML = result.toFixed(2);
     };

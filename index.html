@@ -8,6 +8,11 @@
   <title>Kantor internetowy Patryka</title>
   <meta property="og:image" content="images/opengraph.png">
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/container.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/form.css" rel="stylesheet">
+  <link href="css/section.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
   <script defer src="js/script.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,34 +21,38 @@
     integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="icon" href="images/icon.jpg">
-    <link href="images/readme-image.png" alt="">
+  <link href="images/readme-image.png" alt="">
 </head>
 
-<body class="bodyContainer">
-  <div class="formContainer">
-    <h1 class="header">Kantor internetowy</h1>
-    <form class="js-form">
-      <label>
-        <span class="form__labelText">Wybierz walutę:</span>
-        <select class="js-currency form__field" name="pickedCurrency" required>
-          <option disabled selected>Wybierz walutę</option>
-          <option value="eur">Euro (€)</option>
-          <option value="usd">Dolar amerykański ($)</option>
-          <option value="gbp">Funt brytyjski (£)</option>
-          <option value="chf">Frank szwajcarski (₣)</option>
-        </select>
-      </label>
-      <label>
-        <p>
-          <span class="form__labelText">Wartość w wybranej walucie:</span> <input class="js-plnValue form__field"
-            type="number" name="value" placeholder="Wpisz wartość" required step="0.01">
-        </p>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>Kantor internetowy</h1>
+    </header>
+    <section class="section">
+      <form class="form js-form">
+        <span class="form__option">Wybierz walutę:</span>
+        <label class="form__label">
+          <select class="js-currency form__field" name="currency" required>
+            <option disabled selected>Wybierz walutę</option>
+            <option value="eur">Euro (€)</option>
+            <option value="usd">Dolar amerykański ($)</option>
+            <option value="gbp">Funt brytyjski (£)</option>
+            <option value="chf">Frank szwajcarski (₣)</option>
+          </select>
+        </label>
+        <span class="form__option">Wartość w wybranej walucie:</span>
+        <label class="form__label">
+          <input class="js-value form__field" type="number" name="value" placeholder="Wpisz wartość" required
+            step="0.01">
+        </label>
         <button class="form__button">Przelicz!</button>
-      </label>
-    </form>
-    <p class="lastParagraph">
+      </form>
+    </section>
+    <p class="footer">
       Za podaną ilość wybranej waluty otrzymasz: <strong class="js-result">___</strong> zł</p>
-  </div>
+
+  </main>
 </body>
 
 </html>
